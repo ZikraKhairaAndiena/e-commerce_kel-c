@@ -16,7 +16,7 @@
 
 </head>
 <body class="d-flex flex-column h-100">
-    @include('layouts.header')
+    @include('customer.layouts.header')
 
 <!-- Begin page content -->
 <main class="flex-shrink-0">
@@ -25,7 +25,7 @@
     </div>
 </main>
 
-@include('layouts.footer')
+@include('customer.layouts.footer')
 
 <script src="js/bootstrap.bundle.min.js" ></script>
 <!-- Start Script -->

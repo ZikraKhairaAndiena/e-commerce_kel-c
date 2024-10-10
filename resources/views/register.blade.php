@@ -1,4 +1,4 @@
-@extends('layouts.main')
+@extends('customer.layouts.main')
 
 @section('content')
 <section class="h-100 gradient-form" style="background-color: #eee;">
