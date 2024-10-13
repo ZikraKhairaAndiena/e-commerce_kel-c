@@ -9,7 +9,7 @@ use App\Http\Controllers\RegisterController;
 // });
 
 Route::get('/home', function(){
-    return view('home');
+    return view('customer.home');
 });
 
 Route::get('/another', function(){
@@ -25,17 +25,21 @@ Route::get('/register', [RegisterController::class, 'index']);
 Route::post('/register', [RegisterController::class, 'store']);
 
 Route::get('/about', function(){
-    return view('about');
+    return view('customer.about');
 });
 
 Route::get('/shop', function(){
-    return view('shop');
+    return view('customer.shop');
 });
 
 Route::get('/shop-single', function(){
-    return view('shop-single');
+    return view('customer.shop-single');
 });
 
 Route::get('/contact', function(){
-    return view('contact');
+    return view('customer.contact');
+});
+
+Route::get('/home_admin', function(){
+    return view('admin.home_admin');
 });
