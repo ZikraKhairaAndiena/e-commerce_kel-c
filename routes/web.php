@@ -33,3 +33,7 @@ Route::get('/shop-single', function(){
 Route::get('/contact', function(){
     return view('customer.contact');
 });
+
+Route::get('/home_admin', function(){
+    return view('admin.home_admin');
+});
