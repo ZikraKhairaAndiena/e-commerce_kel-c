@@ -10,46 +10,37 @@ use Illuminate\Support\Str;
 class RegisterController extends Controller
 {
     /**
-     * Display a listing of the resource.
+     * Display the registration form.
      */
     public function index()
     {
-        $users = User::latest()->paginate(10);
-        return view('register', ['users' => $users]);
+        return view('register');
     }
 
     /**
-     * Show the form for creating a new resource.
-     */
-    public function create()
-    {
-        $users = User::latest()->paginate(10);
-        return view('register', ['users' => $users]);
-    }
-
-    /**
-     * Store a newly created resource in storage.
+     * Store a newly created user in storage.
      */
     public function store(Request $request)
     {
+        // Validasi input
         $validated = $request->validate([
-            'name' => 'required|min:3',
-            'email' => 'required',
+            'name' => 'required|string|min:3|max:255',
+            'email' => 'required|email|unique:users,email',
             'password' => 'required|min:4|confirmed',
-            'captcha' => 'required|captcha'
+            'captcha' => 'required|captcha',
         ]);
 
-        $validated['email_verified_at'] = now();
-        $validated['remember_token'] = Str::random(10);
-
-        User::create([
+        // Buat data user baru
+        $user = User::create([
             'name' => $validated['name'],
             'email' => $validated['email'],
-            'password' => Hash::make($validated['password'])
+            'password' => Hash::make($validated['password']),
+            'email_verified_at' => now(),
+            'remember_token' => Str::random(10),
         ]);
 
-
-        return redirect('/login')->with('pesan', 'Data sudah berhasil disimpan');
+        // Redirect ke halaman login dengan pesan sukses
+        return redirect()->route('login')->with('pesan', 'Registrasi berhasil, silakan login.');
     }
 
     /**
