@@ -37,7 +37,7 @@
 
     <!-- Nav Item - Produk -->
     <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
+        <a class="nav-link collapsed" href="/produk" data-toggle="collapse" data-target="#collapseUtilities"
             aria-expanded="true" aria-controls="collapseUtilities">
             <i class="fas fa-fw fa-wrench"></i>
             <span>Produk</span>

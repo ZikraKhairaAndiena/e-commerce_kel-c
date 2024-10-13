@@ -27,11 +27,11 @@
             <li data-bs-target="#template-mo-zay-hero-carousel" data-bs-slide-to="2"></li>
         </ol>
         <div class="carousel-inner">
-            <div class="carousel-item active">
+            {{-- <div class="carousel-item active">
                 <div class="container">
                     <div class="row p-5">
                         <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
-                            <img class="img-fluid" src="./assets/img/banner_img_01.jpg" alt="">
+                            <img class="img-fluid" src="{{ asset('img/banner_img_01.jpg') }}" alt="Banner Image">
                         </div>
                         <div class="col-lg-6 mb-0 d-flex align-items-center">
                             <div class="text-align-left align-self-center">
@@ -47,12 +47,30 @@
                         </div>
                     </div>
                 </div>
+            </div> --}}
+            <div class="carousel-item active">
+                <div class="container">
+                    <div class="row p-5">
+                        <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
+                            <img class="img-fluid" src="{{ asset('img/banner_img_01.jpg') }}" alt="Banner Image">
+                        </div>
+                        <div class="col-lg-6 mb-0 d-flex align-items-center">
+                            <div class="text-align-left">
+                                <h1 class="h1">Fruit Station E-Commerce</h1>
+                                <h3 class="h2">Located in Alai Street Padang City</h3>
+                                <p>
+                                    There are have many fruits import and local
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="carousel-item">
                 <div class="container">
                     <div class="row p-5">
                         <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
-                            <img class="img-fluid" src="./assets/img/banner_img_02.jpg" alt="">
+                            <img class="img-fluid" src="{{ asset('img/banner_img_01.jpg') }}" alt="Banner Image">
                         </div>
                         <div class="col-lg-6 mb-0 d-flex align-items-center">
                             <div class="text-align-left">
@@ -71,7 +89,7 @@
                 <div class="container">
                     <div class="row p-5">
                         <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
-                            <img class="img-fluid" src="./assets/img/banner_img_03.jpg" alt="">
+                            <img class="img-fluid" src="{{ asset('img/banner_img_01.jpg') }}" alt="Banner Image">
                         </div>
                         <div class="col-lg-6 mb-0 d-flex align-items-center">
                             <div class="text-align-left">
@@ -110,17 +128,17 @@
         </div>
         <div class="row">
             <div class="col-12 col-md-4 p-5 mt-3">
-                <a href="#"><img src="./assets/img/category_img_01.jpg" class="rounded-circle img-fluid border"></a>
+                <img class="rounded-circle img-fluid border" src="{{ asset('img/category_img_01.jpg') }}" >
                 <h5 class="text-center mt-3 mb-3">Watches</h5>
                 <p class="text-center"><a class="btn btn-success">Go Shop</a></p>
             </div>
             <div class="col-12 col-md-4 p-5 mt-3">
-                <a href="#"><img src="./assets/img/category_img_02.jpg" class="rounded-circle img-fluid border"></a>
+                <img class="rounded-circle img-fluid border" src="{{ asset('img/category_img_02.jpg') }}" >
                 <h2 class="h5 text-center mt-3 mb-3">Shoes</h2>
                 <p class="text-center"><a class="btn btn-success">Go Shop</a></p>
             </div>
             <div class="col-12 col-md-4 p-5 mt-3">
-                <a href="#"><img src="./assets/img/category_img_03.jpg" class="rounded-circle img-fluid border"></a>
+                <img class="rounded-circle img-fluid border" src="{{ asset('img/category_img_03.jpg') }}" >
                 <h2 class="h5 text-center mt-3 mb-3">Accessories</h2>
                 <p class="text-center"><a class="btn btn-success">Go Shop</a></p>
             </div>
@@ -145,7 +163,7 @@
                 <div class="col-12 col-md-4 mb-4">
                     <div class="card h-100">
                         <a href="shop-single.html">
-                            <img src="./assets/img/feature_prod_01.jpg" class="card-img-top" alt="...">
+                            <img class="card-img-top" src="{{ asset('img/feature_prod_01.jpg') }}" alt="Banner Image">
                         </a>
                         <div class="card-body">
                             <ul class="list-unstyled d-flex justify-content-between">
@@ -169,7 +187,7 @@
                 <div class="col-12 col-md-4 mb-4">
                     <div class="card h-100">
                         <a href="shop-single.html">
-                            <img src="./assets/img/feature_prod_02.jpg" class="card-img-top" alt="...">
+                            <img class="card-img-top" src="{{ asset('img/feature_prod_02.jpg') }}" alt="Banner Image">
                         </a>
                         <div class="card-body">
                             <ul class="list-unstyled d-flex justify-content-between">
@@ -192,8 +210,7 @@
                 </div>
                 <div class="col-12 col-md-4 mb-4">
                     <div class="card h-100">
-                        <a href="shop-single.html">
-                            <img src="./assets/img/feature_prod_03.jpg" class="card-img-top" alt="...">
+                        <a href="shop-single.html"><img class="card-img-top" src="{{ asset('img/feature_prod_03.jpg') }}" alt="Banner Image"><img src="./assets/img/feature_prod_03.jpg" class="card-img-top" alt="...">
                         </a>
                         <div class="card-body">
                             <ul class="list-unstyled d-flex justify-content-between">

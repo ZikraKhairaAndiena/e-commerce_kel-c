@@ -21,15 +21,29 @@
                     <div data-mdb-input-init class="form-outline mb-4">
                       <input type="text" id="form3Example1cg" class="form-control"
                         placeholder="Your Name" style="border-radius: 30px; border: 1px solid #ccc; padding: 10px 15px;" />
-                      <label class="form-label" for="form3Example1cg">Your Name</label>
+                      <label class="form-label" for="form3Example1cg">Name</label>
                     </div>
 
                     <!-- Email input with the same styling as login form -->
                     <div data-mdb-input-init class="form-outline mb-4">
                       <input type="email" id="form3Example3cg" class="form-control"
                         placeholder="Your Email" style="border-radius: 30px; border: 1px solid #ccc; padding: 10px 15px;" />
-                      <label class="form-label" for="form3Example3cg">Your Email</label>
+                      <label class="form-label" for="form3Example3cg">Email</label>
                     </div>
+
+                    <!-- Alamat input with the same styling as login form -->
+                    <div data-mdb-input-init class="form-outline mb-4">
+                        <input type="alamat" id="form3Example3cg" class="form-control"
+                          placeholder="" style="border-radius: 30px; border: 1px solid #ccc; padding: 10px 15px;" />
+                        <label class="form-label" for="form3Example3cg">Alamat</label>
+                    </div>
+
+                    <!-- No Telepon input with the same styling as login form -->
+                    <div data-mdb-input-init class="form-outline mb-4">
+                        <input type="notelp" id="form3Example3cg" class="form-control"
+                          placeholder="" style="border-radius: 30px; border: 1px solid #ccc; padding: 10px 15px;" />
+                        <label class="form-label" for="form3Example3cg">No Telepon</label>
+                      </div>
 
                     <!-- Password input with the same styling as login form -->
                     <div data-mdb-input-init class="form-outline mb-4">
@@ -41,8 +55,8 @@
                     <!-- Repeat Password input with the same styling as login form -->
                     <div data-mdb-input-init class="form-outline mb-4">
                       <input type="password" id="form3Example4cdg" class="form-control"
-                        placeholder="Repeat your password" style="border-radius: 30px; border: 1px solid #ccc; padding: 10px 15px;" />
-                      <label class="form-label" for="form3Example4cdg">Repeat your password</label>
+                        placeholder="Password confirm" style="border-radius: 30px; border: 1px solid #ccc; padding: 10px 15px;" />
+                      <label class="form-label" for="form3Example4cdg">Password Confirm</label>
                     </div>
 
                     <!-- Checkbox for terms and conditions -->

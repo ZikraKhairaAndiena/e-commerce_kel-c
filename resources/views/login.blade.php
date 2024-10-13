@@ -23,7 +23,7 @@
                     <div data-mdb-input-init class="form-outline mb-4">
                       <input type="email" id="form2Example11" class="form-control"
                         placeholder="Email Address" style="border-radius: 30px; border: 1px solid #ccc; padding: 10px 15px;" />
-                      <label class="form-label" for="form2Example11">Username</label>
+                      <label class="form-label" for="form2Example11">Email</label>
                     </div>
 
                     <div data-mdb-input-init class="form-outline mb-4">
