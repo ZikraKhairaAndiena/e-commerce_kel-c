@@ -228,6 +228,7 @@
                                 Curabitur ac mi sit amet diam luctus porta. Phasellus pulvinar sagittis diam, et scelerisque ipsum lobortis nec.
                             </p>
                             <p class="text-muted">Reviews (74)</p>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos voluptatem consequuntur repellat aliquid possimus veniam deleniti dolore totam enim molestias. Dolore beatae quasi ipsum tempore officiis, sequi temporibus rem voluptates!</p>
                         </div>
                     </div>
                 </div>
