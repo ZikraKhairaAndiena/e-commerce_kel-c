@@ -16,7 +16,7 @@ Route::get('/another', function(){
     return view('another/another');
 });
 
-
+// Route::get('/login', [LoginController::class, 'index'])->name('login');
 
 Route::get('/login', [LoginController::class, 'index'])->name('login');
 Route::post('/login', [LoginController::class, 'authenticate']);
